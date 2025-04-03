@@ -70,6 +70,17 @@ A FrontendEngineer szerepkör a következő területeket fedi le:
 - Teljesítmény optimalizálás
 - Frontend tesztelés
 
+#### Tech Stack Támogatás
+A FrontendEngineer automatikusan elemzi a projekt követelményeit és ajánlja a legmegfelelőbb frontend technológiákat:
+
+```python
+frontend_engineer = FrontendEngineer(tech_stack={
+    "framework": "react@18.2.0",
+    "state": "redux@4.2.1",
+    "styling": "styled-components@5.3.10"
+})
+```
+
 ### Backend Fejlesztés
 A BackendEngineer szerepkör a következő területeket fedi le:
 
@@ -77,6 +88,25 @@ A BackendEngineer szerepkör a következő területeket fedi le:
 - Adatbázis optimalizálás
 - Biztonsági megoldások
 - Backend tesztelés
+
+#### Tech Stack Támogatás
+A BackendEngineer automatikusan elemzi a projekt követelményeit és ajánlja a legmegfelelőbb backend technológiákat:
+
+```python
+backend_engineer = BackendEngineer(tech_stack={
+    "framework": "fastapi@0.104.0",
+    "database": "postgresql@15.0",
+    "orm": "sqlalchemy@2.0.0"
+})
+```
+
+### Tudásbázis Rendszer
+Mindkét szerepkör támogatja a tech stack-specifikus tudásbázisokat:
+
+- Automatikus követelmény elemzés
+- Tech stack ajánlások
+- Tudásbázis betöltés
+- Legjobb gyakorlatok alkalmazása
 
 ### DevOps Támogatás
 A DevOpsEngineer szerepkör a következő területeket fedi le:

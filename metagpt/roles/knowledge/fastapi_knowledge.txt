@@ -1,0 +1,49 @@
+# FastAPI Knowledge Base
+
+## Best Practices
+1. Use Pydantic models for request/response validation
+2. Implement proper error handling with HTTPException
+3. Use dependency injection for database and other services
+4. Implement proper authentication and authorization
+5. Use async/await for database operations
+6. Implement proper logging
+7. Use proper API versioning
+8. Implement rate limiting
+9. Use proper CORS configuration
+10. Implement proper documentation with OpenAPI
+
+## Common Patterns
+1. Router organization
+2. Middleware usage
+3. Background tasks
+4. WebSocket support
+5. File uploads
+6. Database integration
+7. Caching strategies
+8. Testing patterns
+9. Deployment considerations
+10. Security best practices
+
+## Performance Optimization
+1. Use proper database indexing
+2. Implement caching where appropriate
+3. Use proper connection pooling
+4. Implement proper error handling
+5. Use proper logging levels
+6. Implement proper monitoring
+7. Use proper load balancing
+8. Implement proper rate limiting
+9. Use proper compression
+10. Implement proper security measures
+
+## Security Considerations
+1. Use proper authentication
+2. Implement proper authorization
+3. Use proper input validation
+4. Implement proper output encoding
+5. Use proper session management
+6. Implement proper CSRF protection
+7. Use proper XSS protection
+8. Implement proper SQL injection protection
+9. Use proper file upload validation
+10. Implement proper rate limiting 
