@@ -24,6 +24,7 @@ def generate_repo(
     reqa_file="",
     max_auto_summarize_code=0,
     recover_path=None,
+    startup_mode=False,
 ):
     """Run the startup logic. Can be called from CLI or other Python scripts."""
     from metagpt.config2 import config
@@ -34,6 +35,11 @@ def generate_repo(
         Engineer2,
         ProductManager,
         TeamLeader,
+        StartupArchitect,
+        StartupEngineer,
+        DevOpsEngineer,
+        FrontendEngineer,
+        BackendEngineer,
     )
     from metagpt.team import Team
 
@@ -42,16 +48,31 @@ def generate_repo(
 
     if not recover_path:
         company = Team(context=ctx)
-        company.hire(
-            [
-                TeamLeader(),
-                ProductManager(),
-                Architect(),
-                Engineer2(),
-                # ProjectManager(),
-                DataAnalyst(),
-            ]
-        )
+        
+        if startup_mode:
+            # Startup mode with specialized roles
+            company.hire(
+                [
+                    TeamLeader(),
+                    ProductManager(),
+                    StartupArchitect(),
+                    FrontendEngineer(),
+                    BackendEngineer(),
+                    DevOpsEngineer(),
+                    DataAnalyst(),
+                ]
+            )
+        else:
+            # Standard mode with traditional roles
+            company.hire(
+                [
+                    TeamLeader(),
+                    ProductManager(),
+                    Architect(),
+                    Engineer2(),
+                    DataAnalyst(),
+                ]
+            )
 
         # if implement or code_review:
         #     company.hire([Engineer(n_borg=5, use_code_review=code_review)])
@@ -98,6 +119,7 @@ def startup(
     ),
     recover_path: str = typer.Option(default=None, help="recover the project from existing serialized storage"),
     init_config: bool = typer.Option(default=False, help="Initialize the configuration file for MetaGPT."),
+    startup_mode: bool = typer.Option(default=False, help="Use startup-specific roles for generating a startup project."),
 ):
     """Run a startup. Be a boss."""
     if init_config:
@@ -121,6 +143,7 @@ def startup(
         reqa_file,
         max_auto_summarize_code,
         recover_path,
+        startup_mode,
     )
 
 

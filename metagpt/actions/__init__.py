@@ -25,6 +25,9 @@ from metagpt.actions.write_test import WriteTest
 from metagpt.actions.di.execute_nb_code import ExecuteNbCode
 from metagpt.actions.di.write_analysis_code import WriteAnalysisCode
 from metagpt.actions.di.write_plan import WritePlan
+from metagpt.actions.write_startup_architecture import WriteStartupArchitecture
+from metagpt.actions.write_startup_code import WriteStartupCode
+from metagpt.actions.setup_devops import SetupDevOps
 
 
 class ActionType(Enum):
@@ -48,10 +51,14 @@ class ActionType(Enum):
     EXECUTE_NB_CODE = ExecuteNbCode
     WRITE_ANALYSIS_CODE = WriteAnalysisCode
     WRITE_PLAN = WritePlan
+    WRITE_STARTUP_ARCHITECTURE = WriteStartupArchitecture
+    WRITE_STARTUP_CODE = WriteStartupCode
+    SETUP_DEVOPS = SetupDevOps
 
 
 __all__ = [
     "ActionType",
     "Action",
     "ActionOutput",
+    "SetupDevOps",
 ]

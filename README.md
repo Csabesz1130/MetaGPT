@@ -1,4 +1,3 @@
-
 # MetaGPT: The Multi-Agent Framework
 
 <p align="center">
@@ -46,6 +45,47 @@
 ![A software company consists of LLM-based roles](docs/resources/software_company_cd.jpeg)
 
 <p align="center">Software Company Multi-Agent Schematic (Gradually Implementing)</p>
+
+## Új Funkciók
+
+### Startup Mód
+A MetaGPT most már támogatja a startup projektek generálását speciális szerepkörökkel:
+
+- `StartupArchitect`: Startup-specifikus architektúra tervezés
+- `FrontendEngineer`: Modern frontend fejlesztés és implementáció
+- `BackendEngineer`: Robusztus backend szolgáltatások fejlesztése
+- `DevOpsEngineer`: DevOps környezet és folyamatok beállítása
+
+A startup mód használatához:
+
+```bash
+metagpt "Az Ön startup ötlete" --startup-mode
+```
+
+### Frontend Fejlesztés
+A FrontendEngineer szerepkör a következő területeket fedi le:
+
+- Komponens struktúra és újrafelhasználhatóság
+- Reszponzív felhasználói felület
+- Teljesítmény optimalizálás
+- Frontend tesztelés
+
+### Backend Fejlesztés
+A BackendEngineer szerepkör a következő területeket fedi le:
+
+- RESTful API tervezés és implementáció
+- Adatbázis optimalizálás
+- Biztonsági megoldások
+- Backend tesztelés
+
+### DevOps Támogatás
+A DevOpsEngineer szerepkör a következő területeket fedi le:
+
+- CI/CD pipeline beállítás
+- Konténerizáció (Docker, Kubernetes)
+- Infrastruktúra kód (Terraform, Ansible)
+- Monitoring és naplózás (Prometheus, Grafana)
+- Biztonsági gyakorlatok
 
 ## Get Started
 
